@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Dear, " + name + " Total Score is: " + answeredScore, Toast.LENGTH_LONG).show();
     }
 
-    private void getQuizResults(View v) {
+   public void getQuizResults(View v) {
         boolean ansArray[] = new boolean[8];
         RadioButton ans = (RadioButton) findViewById(R.id.question1choice3);
         ansArray[0] = ans.isChecked();
