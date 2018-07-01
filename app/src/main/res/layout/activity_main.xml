@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quizScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/quizLinearView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quizWelcomeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:gravity="center"
+            android:text="welcome to my awesome quiz!"
+            android:textAllCaps="true"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="166dp"
+            android:src="@drawable/quizimage" />
+
+        <TextView
+            android:id="@+id/quizReadyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16sp"
+            android:layout_marginTop="16dp"
+            android:text="Ready to ace this quiz? First tell us who you are:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/nameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Key in Name"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingBottom="8dp"
+            android:textAllCaps="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/letsplay" />
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Q1 Where would you find the Sea of Tranquility?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/question1rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question1choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Japan" />
+
+            <RadioButton
+                android:id="@+id/question1choice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Africa" />
+
+            <RadioButton
+                android:id="@+id/question1choice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:checked="false"
+                android:text="The Moon" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Q2 It is the seventh planet from the sun?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/question2rb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question2choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Uranus"/>
+
+            <RadioButton
+                android:id="@+id/question2choice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Earth" />
+
+            <RadioButton
+                android:id="@+id/question2choice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:checked="false"
+                android:text="Saturn" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Q3 These bulbs were exchanged as a form of currency?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/question3rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question3choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Crocus" />
+
+            <RadioButton
+                android:id="@+id/question3choice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Tulips" />
+
+            <RadioButton
+                android:id="@+id/question3choice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:checked="false"
+                android:text="Canna" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Q4 Which facts is true about the film Roundhay Garden Scene?"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/question4choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The most resent film ever made" />
+
+        <CheckBox
+            android:id="@+id/question4choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It was made in 1888" />
+
+        <CheckBox
+            android:id="@+id/question4choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Pamela Anderson starred in this movie" />
+
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Q5 He is the director of the Lord of the Rings Trilogy"
+            android:textSize="18sp" />
+
+        <RadioGroup
+
+            android:id="@+id/question5rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question5choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Spike lee" />
+
+            <RadioButton
+                android:id="@+id/question5choice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Peter Jackson" />
+
+            <RadioButton
+                android:id="@+id/question5choice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:checked="false"
+                android:text="David Cronenberg" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Q6The diameter of Earth is 8,000 miles."
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/question8rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question8choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/question8choice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:checked="false"
+                android:text="False" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Q7 Catherine of Aragon is the 1st wife of Henry VIl"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/question9choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="True" />
+
+        <CheckBox
+            android:id="@+id/question9choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="False" />
+
+        <TextView
+            android:id="@+id/question10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Q8 What is the capital city of Spain?"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/question10rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/question10choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Madrid" />
+
+            <RadioButton
+                android:id="@+id/question10choice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Kabul" />
+
+            <RadioButton
+                android:id="@+id/question10choice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:checked="false"
+                android:text="Andorra la Vella" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/QuizApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/submit_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:gravity="center"
+                    android:text="Check out how you did by clicking Submit"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/submit_answers"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/submit_text_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16sp"
+                    android:background="#5D4037"
+                    android:onClick="getQuizResults"
+                    android:text="Submit"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/reset_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/submit_answers"
+                    android:layout_marginBottom="16sp"
+                    android:gravity="center"
+                    android:text="Want to play again? Click Reset"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/Reset_Quiz"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reset_text_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16sp"
+                    android:background="#5D4037"
+                    android:text="Reset"
+                    android:textAllCaps="true" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/Reset_Quiz"
+                    android:background="#5D4037" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
